@@ -1,0 +1,84 @@
+{
+    "steps": [
+        {
+            "command": "Open",
+            "element": "",
+            "eArray": [],
+            "input": "https://qas.qmetry.com/bank",
+            "status": "NotRun",
+            "elementKey": "",
+            "elementDesc": "",
+            "isEncrypted": false,
+            "isDisplay": false,
+            "iframeNode": [],
+            "indexColumn": "",
+            "@@mycolor": null
+        },
+        {
+            "command": "Verify Text",
+            "element": "h2.qmetrybanklogin",
+            "eArray": [
+                [
+                    "xpath=//h2",
+                    "xpath:position"
+                ],
+                [
+                    "css=h2",
+                    "css"
+                ],
+                [
+                    "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Username'])[1]/preceding::h2[1]",
+                    "xpath:neighbor"
+                ],
+                [
+                    "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password'])[1]/preceding::h2[1]",
+                    "xpath:neighbor"
+                ],
+                [
+                    "xpath=//h2[text()='QMetry Bank Login']",
+                    "xpath:innerText"
+                ],
+                [
+                    "h2.qmetrybanklogin",
+                    "key"
+                ]
+            ],
+            "input": "QMetry Bank Login",
+            "status": "NotRun",
+            "elementKey": "h2.qmetrybanklogin",
+            "elementDesc": "H2 qmetrybanklogin",
+            "isEncrypted": false,
+            "isDisplay": false,
+            "iframeNode": [],
+            "indexColumn": "",
+            "@@mycolor": null
+        }
+    ],
+    "type": "web",
+    "capabilities": {
+        "remoteUrl": "https://qas.qmetry.com/bank",
+        "type": "web",
+        "selectBrowser": "chrome",
+        "selectDevice": "",
+        "isRemote": false,
+        "remoteHubUrl": "http://127.0.0.1:4444/wd/hub/",
+        "isDebugMode": false,
+        "details": {
+            "deviceMetrics": {
+                "name": "",
+                "width": "",
+                "height": "",
+                "pixelRatio": "",
+                "userAgent": ""
+            }
+        }
+    },
+    "testDataExample": [],
+    "isTCValid": true,
+    "externalTestData": false,
+    "recordSessionType": "multiple",
+    "tags": [],
+    "description": "",
+    "shared": false,
+    "executionStatus": "NotRun"
+}
